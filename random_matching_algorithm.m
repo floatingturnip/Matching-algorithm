@@ -1,4 +1,4 @@
-%[file, path] = uigetfile('.txt')
+%[file, path] = uigetfile('.txt') % used for testing different files
 file = 'names.txt';
 if file ~= 0
 else
@@ -6,19 +6,21 @@ else
 end
 
 fileID = fopen(file,'r');
-A = textscan(fileID, '%s');
-B = A{1};
+initial_text = textscan(fileID, '%s');
+original_list = initial_text{1};
 
-[numEntries,n] = size(B)
+[numEntries,n] = size(original_list)
 ii=randperm(numEntries)
 [~,previous_order]=sort(ii)
 
-C = B(ii)
+randomized_list = original_list(ii)
+num_participants = length(randomized_list)
+group_size = 3
+divisible_number = num_participants + (group_size - rem(num_participants,group_size))
+divisible_randomized_list = cell(1,divisible_number)
+divisible_randomized_list(1:num_participants) = randomized_list
 
-half = floor(numEntries/2)
-column1 = C(1:half)
-column2 = C(half + 1:numEntries)
+partner = reshape(divisible_randomized_list, group_size, [])'
 
-final = horzcat(column1, column2)
-finaltable = cell2table(final)
+finaltable = cell2table(partner)
 writetable(finaltable, 'matched_names.txt', 'Delimiter', '\t')
