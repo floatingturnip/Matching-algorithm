@@ -7,7 +7,7 @@ end
 
 fileID = fopen(file,'r');
 initial_text = textscan(fileID, '%s %s')
-original_list = strcat(initial_text{1}, '.' ,initial_text{2});
+original_list = strcat(initial_text{1}, {' '} ,initial_text{2});
 
 [numEntries,n] = size(original_list)
 ii=randperm(numEntries)
