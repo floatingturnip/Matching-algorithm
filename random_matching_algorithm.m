@@ -6,8 +6,8 @@ else
 end
 
 fileID = fopen(file,'r');
-initial_text = textscan(fileID, '%s');
-original_list = initial_text{1};
+initial_text = textscan(fileID, '%s %s')
+original_list = strcat(initial_text{1}, '.' ,initial_text{2});
 
 [numEntries,n] = size(original_list)
 ii=randperm(numEntries)
@@ -15,7 +15,7 @@ ii=randperm(numEntries)
 
 randomized_list = original_list(ii)
 num_participants = length(randomized_list)
-group_size = 3
+group_size = 2
 divisible_number = num_participants + (group_size - rem(num_participants,group_size))
 divisible_randomized_list = cell(1,divisible_number)
 divisible_randomized_list(1:num_participants) = randomized_list
