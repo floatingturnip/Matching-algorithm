@@ -2,6 +2,8 @@
 ## How it works
 This is a random matching algorithm that I use for Robochat. It takes the names in names.txt separated by a new line, and randomly matches the names into pairs
 
+Update: Functionality also added to make secret santa matches 
+
 ## Requires:
 A names.txt file with the names of the people to be matched
 
