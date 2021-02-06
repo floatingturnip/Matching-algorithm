@@ -8,6 +8,8 @@ I also modified it to incorporate functionality to make secret santa matches
 ## Requires:
 A names.txt file with the names of the people to be matched
 
+MATLAB 2018B or higher, it may work with older versions but has not been tested 
+
 ## How to use:
 have a names.txt file with all the participants' names on a separate line. Open the desired .m file on MATLAB and hit run. Matches will be generated in a new .txt file according to the designated name
 
@@ -22,5 +24,5 @@ Robochat is a program where students in my cohort can sign up each week to be ra
 and arrange a time together to have a casual video call conversation
 
 ## Future plans
-I am currently working on shifting the implementation to python. Once the python implementations are complete, 
+I am currently working on shifting the implementation from MATLAB to python. Once the python implementations are complete, 
 I hope to improve the matching algorithm for secret santa
