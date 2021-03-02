@@ -24,5 +24,4 @@ Robochat is a program where students in my cohort can sign up each week to be ra
 and arrange a time together to have a casual video call conversation
 
 ## Future plans
-I am currently working on shifting the implementation from MATLAB to python. Once the python implementations are complete, 
-I hope to improve the matching algorithm for secret santa
+I hope to improve the matching algorithm for secret santa and the random pair matcher
