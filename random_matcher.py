@@ -11,7 +11,7 @@ print(content)
 random.shuffle(content)
 print(content)
 
-n = 2
+n = 2 # number of people per group
 subgroups = [content[i * n:(i + 1) * n] for i in range((len(content) + n - 1) // n)]
 print(subgroups)
 
