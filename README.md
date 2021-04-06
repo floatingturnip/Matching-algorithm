@@ -1,6 +1,6 @@
 # Matching-algorithm
 ## Inspiration
-Inspiration, the idea of this was based off of fizz beans! A different matching algorith/email script that does what this does but in a more sophisticated/complicated way (fizz beans repo is private). And fizz beans is based off of [Yelp Beans](https://github.com/Yelp/beans)
+The idea of this was based off of fizz beans! A different matching algorith/email script that does what this does but in a more sophisticated/complicated way (fizz beans repo is private). And fizz beans is based off of [Yelp Beans](https://github.com/Yelp/beans)
 
 ## How it works
 This is a random matching algorithm that I use for Robochat. It takes the names in names.txt separated by a new line, 
